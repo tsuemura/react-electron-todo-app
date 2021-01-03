@@ -4,7 +4,11 @@
 //
 // import User from 'path/to/interfaces';
 
-export type User = {
-  id: number
+export type Task = {
+  key: string
   name: string
+}
+
+export type TaskList = {
+  tasks: []
 }

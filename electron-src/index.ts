@@ -29,6 +29,10 @@ app.on('ready', async () => {
       })
 
   mainWindow.loadURL(url)
+
+  if (isDev) {
+    mainWindow.webContents.openDevTools();
+  }
 })
 
 // Quit the app once all windows are closed
